@@ -1,0 +1,441 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  width: 100%;
+  height: 400vh;
+}
+
+/* ===================================== */
+/*Start - Summit*/
+
+.summit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6.25rem;
+  width: 100vw;
+  height: auto;
+  padding: 0px 6rem;
+  top: 0px;
+  background-color: #FFD868;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 1.8rem;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+}
+
+.title-description {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.title-description h3 {
+  width: 29rem;
+  line-height: 6.1rem;
+  color: #721B65;
+  font-size: 4.5rem;
+}
+
+.text-description {
+  width: 35rem;
+  height: auto;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.image-student {
+  width: 35.6rem;
+  height: 50.8rem;
+}
+
+.title-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 1.5rem;
+  font-size: 0.6rem;
+}
+
+.title-buttons p {
+  width: 100px;
+  height: 24px;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.5rem;
+}
+
+.button {
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  width: 17rem;
+  height: auto;
+}
+
+#first {
+  background: #FFFFFF;
+}
+
+#second {
+  background: #721B65;
+}
+
+#first p {
+  color: #721B65;
+}
+
+#second p {
+  color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 1274px) {
+  .title-description h3 {
+    width: 100%;
+    height: 100%;
+    line-height: 5.1rem;
+    font-size: 4.5em;
+  }
+
+  .image-student img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .general-buttons {
+    height: 7rem;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .summit {
+    flex-direction: column;
+  }
+
+  .title-description h3 {
+    width: 100%;
+    height: 100%;
+    line-height: 5.1rem;
+    font-size: 2.5rem;
+  }
+
+  .text-description {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+
+  .image-student {
+    display: none;
+  }
+
+  .button {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* End - Summit*/
+/* ===================================== */
+
+/* ===================================== */
+/* Start - Certification*/
+
+.certification {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4.3rem;
+  gap: 4.8rem;
+  background-color: #E5E5E5;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image-certification {
+  width: 38.5rem;
+  height: auto;
+}
+
+.description-certification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 3.5rem;
+}
+
+.text-certification {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  width: 546px;
+  text-align: right;
+}
+
+.text-certification h3 {
+  height: auto;
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.text-certification p {
+  height: auto;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 1274px) {
+  .certification {
+    width: 100%;
+    height: 100%;
+  }
+
+  .certification-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-certification img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-certification {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .certification {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-certification h3 {
+    font-size: 2.5rem;
+  }
+
+  .image-certification {
+    display: none;
+  }
+
+  .certification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-certification {
+    height: 100%;
+    width: 100%;
+  }
+
+  .certification-container #second {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+/* End - Certification */
+/* ===================================== */
+
+/* ===================================== */
+/* Start - Cards */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 6.2rem;
+  gap: 40px;
+  background-color: #FFD868;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-cards h3 {
+  width: 100%;
+  height: 4.5rem;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  text-align: center;
+  color: #721B65;
+}
+
+.more-cards {
+  color: #721B65;
+  padding-bottom: 50px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1274px) {
+  .cards {
+    width: 100%;
+    height: 100%;
+  }
+
+  .title-cards h3 {
+    width: 100%;
+    height: 20%;
+    font-size: 2.5rem;
+  }
+
+}
+
+/* End - Cards */
+/* ===================================== */
+
+/* ===================================== */
+/* Start - Baseboard */
+.baseboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #E5E5E5;
+  width: 100vw;
+  height: 100vh;
+}
+
+.baseboard-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 3.7rem;
+}
+
+.baseboard-paragraph {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4.3rem;
+  gap: 1rem;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  width: 100%
+}
+
+.baseboard-title h3 {
+  width: 100%;
+  height: 4.5rem;
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.baseboard-text p {
+  width: 100%;
+  height: auto;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #000000;
+  padding-right: 3rem;
+}
+
+.baseboard-icons {
+  width: 20rem;
+  height: 20rem;
+}
+
+
+@media screen and (max-width: 1274px) {
+  .baseboard {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .baseboard-title h3 {
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem;
+  }
+
+  .baseboard-description #second {
+    width: 20%;
+    height: 20%;
+  }
+
+  .baseboard-icons div {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    height: 10rem;
+  }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+  .baseboard-icons div {
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    height: 14rem;
+  }
+
+
+
+}
+
+/* End - Baseboard */
+/* ===================================== */
